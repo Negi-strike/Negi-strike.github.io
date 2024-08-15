@@ -1,0 +1,130 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  overflow: hidden;
+}
+
+#game-container {
+  width: 720px;
+  height: 1080px;
+  position: relative;
+  background-color: #1a1a1a;
+}
+
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#game-canvas {
+  display: block;
+  margin: 0 auto;
+  background-color: #008080;
+}
+
+#ranking-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: white;
+}
+
+#ranking-table th, #ranking-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#start-button, #submit-score {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#nickname-input {
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#item-selection {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-card {
+  width: 220px;
+  height: 300px;
+  margin: 0 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: black;
+}
+
+.item-card.일반 { background-color: #ccc; }
+.item-card.희귀 { background-color: #87CEEB; }
+.item-card.영웅 { background-color: #9370DB; }
+.item-card.전설 { background-color: #FFD700; }
+
+.item-rarity {
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+.item-title {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.item-school {
+  font-style: italic;
+  margin-bottom: 3px;
+}
+
+.item-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin: 10px 0;
+}
+
+.item-description {
+  font-size: 10px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+#item-icons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+}

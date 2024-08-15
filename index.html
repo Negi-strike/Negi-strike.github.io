@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블루아카이브 팬게임</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="start-screen" class="screen">
+            <h1>블루아카이브 팬게임</h1>
+            <button id="start-button">게임 시작</button>
+            <table id="ranking-table">
+                <thead>
+                    <tr>
+                        <th>등수</th>
+                        <th>닉네임</th>
+                        <th>점수</th>
+                    </tr>
+                </thead>
+                <tbody id="ranking-body"></tbody>
+            </table>
+        </div>
+        <div id="game-screen" class="screen" style="display: none;">
+            <canvas id="game-canvas"></canvas>
+            <div id="player-stats">
+                <div id="level">레벨: 1</div>
+                <div id="exp-bar-container">
+                    <div id="exp-bar"></div>
+                </div>
+            </div>
+            <div id="health-container"></div>
+            <div id="item-icons"></div>
+        </div>
+        <div id="game-over-screen" class="screen" style="display: none;">
+            <h2>게임 오버</h2>
+            <p id="final-score"></p>
+            <input type="text" id="nickname-input" maxlength="20" placeholder="닉네임 입력 (20자 이내)">
+            <button id="submit-score">확인</button>
+        </div>
+        <div id="item-selection" style="display: none;"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
